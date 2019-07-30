@@ -1,19 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : 肖发阳腾讯云
- Source Server Type    : MySQL
- Source Server Version : 50724
- Source Host           : 118.24.135.151:3306
- Source Schema         : aliyun_iot
-
- Target Server Type    : MySQL
- Target Server Version : 50724
- File Encoding         : 65001
-
- Date: 30/07/2019 16:08:04
-*/
-
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
