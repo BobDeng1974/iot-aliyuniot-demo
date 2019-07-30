@@ -1,0 +1,50 @@
+server:
+  port: 2500
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://localhost:3306/iot?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: ENC(9FjLdzTdEyv3jiA9VThlUg==)
+      password: ENC(2zOGqcTpsbp36n4v9g/XVg==)
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      use-global-data-source-stat: true
+      filter:
+        stat:
+          log-slow-sql: true
+          merge-sql: true
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.thunk.iot.domain
+  configuration:
+    cache-enabled: false
+
+aliyun:
+  iot:
+    accessKey: ENC(cBs9tZSbBMmKRElGp4VWCYRElvO3k7cH62oYu69/eGw=)
+    accessSecret : ENC(MbyxxoEz4vuMpp6EWItJYJk4h79DrmtorTh0LL1hSWY1miN4MOJoIw==)
+    endpointName: ENC(7dNIVQGVHmDC0tyzo4F+WZ6aW6QI/Qpg)
+    regionId: ENC(7dNIVQGVHmDC0tyzo4F+WZ6aW6QI/Qpg)
+    product: ENC(2MPGhx8N/OJt1EK0Ujx99A==)
+    domain:  ENC(J3loT51MQ9S6D2f3rVs1aItbL27n+5kLBUxAI0AduWGGcxzZ11blBQ==)
+  h2c:
+    accessKey: ENC(cBs9tZSbBMmKRElGp4VWCYRElvO3k7cH62oYu69/eGw=)
+    accessSecret: ENC(MbyxxoEz4vuMpp6EWItJYJk4h79DrmtorTh0LL1hSWY1miN4MOJoIw==)
+    regionId: ENC(7dNIVQGVHmDC0tyzo4F+WZ6aW6QI/Qpg)
+    uid: ENC(VGSSEjnYD5oLpe/089lHJMz0p4ghlcbH2bLekyCPAiw=)
+    endPoint: ENC(Asb+wPEHmj+bhCe0WXkJHHnSohFG0kSL71T1cmifgaDcfnxgZOxoVYAaxMMaMNAPFb67sSS9Wqc1Ra+awxbvv8EKqvObl0l5)
+
+
+logging:
+  level:
+    com.thunk.iot.dao.*: warn
+
+
+jasypt:
+  encryptor:
+    password: BZUlIg3CxiKleAs4AdOhIIbPlTQKYrXB
