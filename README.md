@@ -2,6 +2,15 @@
 
 基于 AliyunIOt 的物联网演示项目
 
+### 目录说明
+- nodeMcu nodeMuc模块的代码
+- system 后台系统
+- WeMos WeMos代码
+- web web管理端
+- iot.sql 系统初始化数据
+ 
+ 
+
 ### 项目技术栈
 
 #### 1.后端
