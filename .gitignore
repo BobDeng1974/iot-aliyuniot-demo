@@ -13,9 +13,10 @@ buildNumber.properties
 
 .vscode
 
+.idea
+
 node_modules
 
 dist
 
 *.iml
-/.idea/
